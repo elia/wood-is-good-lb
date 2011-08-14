@@ -194,6 +194,8 @@ body {
 /* -- Page Navigation -- */
 .nav {
   padding: 0px 15px; }
+  .nav, .nav #nav, .nav #nav a {
+    font-family: "SFSpeakeasyRegular", "Georgia", serif; }
 
 ul#nav {
   border: 0 none;
