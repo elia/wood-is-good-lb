@@ -27,7 +27,7 @@
   <?php { wp_title(' ');if(wp_title(' ', false)) { echo ' : '; }single_cat_title();echo " : "; bloginfo('name');} ?>
   <?php } ?>
 </title>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v2" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v3" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/dhtml.js"></script>
