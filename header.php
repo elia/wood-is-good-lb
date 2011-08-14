@@ -3,31 +3,31 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title>
-<?php if (is_home()) { ?>
-<?php bloginfo('description'); ?>
-: 
-<?php bloginfo('name'); ?><?php }  ?>
-<?php if (is_page()) { ?>
-<?php wp_title(' '); ?>
-<?php if(wp_title(' ', false)) { echo ' : '; } ?>
-<?php bloginfo('name'); ?><?php }  ?>
-<?php if (is_404()) { ?>
-Page not found : <?php bloginfo('name'); ?>
-<?php }  ?>
-<?php if (is_archive()) { ?>
-<?php wp_title(' '); ?>
-<?php if(wp_title(' ', false)) { echo ' : '; } ?>
-<?php bloginfo('name'); ?>
-<?php }  ?>
-<?php if(is_search()) { ?>
-<?php echo wp_specialchars($s, 1); ?>
-: 
-<?php bloginfo('name'); ?>
-<?php } else if (is_single()){ ?>
-<?php { wp_title(' ');if(wp_title(' ', false)) { echo ' : '; }single_cat_title();echo " : "; bloginfo('name');} ?>
-<?php } ?>
+  <?php if (is_home()) { ?>
+  <?php bloginfo('description'); ?>
+  : 
+  <?php bloginfo('name'); ?><?php }  ?>
+  <?php if (is_page()) { ?>
+  <?php wp_title(' '); ?>
+  <?php if(wp_title(' ', false)) { echo ' : '; } ?>
+  <?php bloginfo('name'); ?><?php }  ?>
+  <?php if (is_404()) { ?>
+  Page not found : <?php bloginfo('name'); ?>
+  <?php }  ?>
+  <?php if (is_archive()) { ?>
+  <?php wp_title(' '); ?>
+  <?php if(wp_title(' ', false)) { echo ' : '; } ?>
+  <?php bloginfo('name'); ?>
+  <?php }  ?>
+  <?php if(is_search()) { ?>
+  <?php echo wp_specialchars($s, 1); ?>
+  : 
+  <?php bloginfo('name'); ?>
+  <?php } else if (is_single()){ ?>
+  <?php { wp_title(' ');if(wp_title(' ', false)) { echo ' : '; }single_cat_title();echo " : "; bloginfo('name');} ?>
+  <?php } ?>
 </title>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v2" type="text/css" media="screen" />
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" /> 
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/dhtml.js"></script>
