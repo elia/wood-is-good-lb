@@ -1,0 +1,158 @@
+/* -- Page Navigation --
+
+.nav
+  padding: 0px 15px
+
+ul#nav
+  border: 0 none
+  padding: 0 14px 0 0
+  list-style: none
+  float: left
+  z-index: 1000
+  li
+    margin: 0
+    border: 0 none
+    padding: 0 4px 0 0px
+    float: left
+    /*For Gecko
+    display: inline
+    list-style: none
+    position: relative
+    height: auto
+  ul
+    margin: 0
+    border: 0 none
+    padding: 0
+    width: 190px
+    list-style: none
+    display: none
+    position: absolute
+    top: 33px
+    left: -1px
+    z-index: 1000
+    &:after
+      clear: both
+      display: block
+      font: 1px / 0px serif
+      content: "."
+      height: 0
+      visibility: hidden
+    li
+      width: 190px
+      padding: 0px
+      float: left
+      /*For IE 7 lack of compliance
+      display: block !important
+      display: inline
+      /*For IE
+      background: none
+  a
+    padding: 5px 12px
+    text-align: center
+    /*padding-left:32px;
+    float: none !important
+    /*For Opera
+    float: left
+    /*For IE
+    display: block
+    font-size: 20px
+    color: #392217
+    text-decoration: none
+    height: auto !important
+    height: 1%
+    /*For IE
+    text-transform: capitalize
+  li.current_page_item li a
+    color: #f3e5cc
+    background: #392217
+    &:visited
+      color: #f3e5cc
+      background: #392217
+  a:hover
+    color: #f3e5cc
+    background: #392217
+    text-decoration: none
+  li
+    &:hover a, &.iehover a
+      color: #f3e5cc
+      background: #392217
+      text-decoration: none
+    &.current_page_item a
+      color: #f3e5cc
+      background: #392217
+      text-decoration: none
+      &:visited
+        color: #f3e5cc
+        background: #392217
+        text-decoration: none
+  a:active
+    color: #ffffff
+  li
+    &:active a, &.ieactive a
+      color: #ffffff
+    &:hover li a, &.iehover li a
+      float: none
+      padding: 5px 10px
+      width: 170px
+      color: #f3e5cc
+      font-size: 13px
+      text-align: left
+      background: #392217
+      border: solid 1px #795a4c
+      border-top: none
+    &:hover li
+      a:hover, &:hover a
+        color: #ffffff
+    &.iehover li
+      a:hover, &.iehover a
+        color: #ffffff
+    &:hover li:hover li a, &.iehover li.iehover li a
+      padding: 5px 10px
+      width: 170px
+      color: #f3e5cc
+      font-size: 13px
+      text-align: left
+      background: #392217
+    &:hover li:hover li
+      a:hover, &:hover a
+        /*background:#555;
+        color: #ffffff
+    &.iehover li.iehover li
+      a:hover, &.iehover a
+        /*background:#555;
+        color: #ffffff
+    &:hover li:hover li:hover li a, &.iehover li.iehover li.iehover li a
+      padding: 5px 10px
+      width: 170px
+      color: #f3e5cc
+      font-size: 13px
+      text-align: left
+      background: #392217
+    &:hover li:hover li:hover li a:hover, &.iehover li.iehover li.iehover li a:hover
+      /*background:#FD7006;
+      color: #ffffff
+  ul ul
+    display: none
+    position: absolute
+    top: 0px
+    left: 190px
+    ul
+      display: none
+      position: absolute
+      top: 0px
+      left: 190px
+  li
+    &:hover ul ul, &.iehover ul ul
+      display: none
+      ul
+        display: none
+    &:hover ul
+      display: block
+  ul
+    li:hover ul, ul li:hover ul
+      display: block
+  li.iehover ul
+    display: block
+  ul
+    li.iehover ul, ul li.iehover ul
+      display: block
